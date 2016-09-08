@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"  content="width=device-width,initial-scale=1">
+<title>立案审批表</title>
+<link href="css/right3.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>s
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<link href="css/alert-handle.css" rel="stylesheet" type="text/css" />
+<link href="css/alert-handle2.css" rel="stylesheet" type="text/css" />
+<link href="../css/Bootstrap.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<!--<script type="text/javascript" src="../js/bootstrap.js"></script>-->
+<script type="text/javascript">
+$(function(){
+	var $qqServer = $('.qqserver');
+	var $qqserverFold = $('.qqserver_fold');
+	var $qqserverUnfold = $('.qqserver_arrow');
+	$qqserverFold.mouseover(function(){
+		$qqserverFold.hide();
+		$qqServer.addClass('unfold');
+	});
+	$qqserverUnfold.click(function(){
+		$qqServer.removeClass('unfold');
+		$qqserverFold.show();
+	});
+	//窗体宽度小鱼1024像素时不显示客服QQ
+	function resizeQQserver(){
+		$qqServer[document.documentElement.clientWidth < 1024 ? 'hide':'show']();
+	}
+	$(window).bind("load resize",function(){
+		resizeQQserver();
+	});
+});
+</script> 
+
+</head>
+
+<body>
+<!--
+<div class="qqserver">
+
+	<div class="qqserver_fold">
+		<div></div>
+	</div>
+	
+	<div class="qqserver-body" style="display: block;">
+		<div class="qqserver-header">
+			<div></div>
+			<span class="qqserver_arrow"></span>
+            <div class="title">案件处理审批表</div>
+		</div>
+		<ul>   
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi">送达回证</div> <div class="anniu"><a href="#">查看</a></div></li>
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi">案件调查终结报告</div><div class="anniu"><a href="#">查看</a></div></li>
+            <li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi2">调查终结报告笔录纸</div><div class="anniu2"><input type="file" class="file" />上传</div></li>
+		</ul>
+	</div>
+	
+</div>-->
+
+
+
+ <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <li><a href="right1.html">行政处罚审批表</a></li>
+             <li><a href="right2.html">行政处罚结案报告</a></li>
+             <li class="active"><a href="right3.html">立案审批表</a></li>
+             <li><a href="right4.html">行政处罚告知书</a></li>
+             <li><a href="right5.html">行政处罚决定书</a></li>       
+         </ul>
+      </div><!-- /.container-fluid -->
+ </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div class="panel-heading">
+         当事人
+         </div>
+           <div class="panel-body">
+               <p style="float:left;">单位</p>
+                <form class="form-horizontal" role="form" style="margin-top:29px ; margin-left:-25px;">
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3 control-label">名称</label>
+                       <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                   
+                   <!--<div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">法定代表人</label>
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                   
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">电话</label>
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                   
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">地址</label>
+                      <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>-->
+                   
+                 <!--  <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">营业执照</label>
+                      <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>-->
+                </form>
+                
+                <p style="float:left;">个人</p>
+                <form class="form-horizontal" role="form" style="margin-top:44px ; margin-left:-25px;">
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">姓名</label>
+                       <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                   
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">性别</label>
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">男
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio"  name="inlineRadioOptions" id="inlineRadio2" value="option2"> 女
+                    </label>
+                     </div>
+                   </div>
+                   
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">年龄</label>
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                   
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">住址</label>
+                      <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                   
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3  col-lg-3  control-label">身份证号</label>
+                      <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                   
+                   <div class="form-group">
+                      <label for="firstname" class="col-xs-4 col-sm-3 col-md-3 col-lg-3  control-label">电话</label>
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                         <input type="text" class="form-control" id="firstname" >
+                      </div>
+                   </div>
+                  
+                </form>
+           </div>
+          </div>   
+       </div> 
+      <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p class="bg-primary">案由</p>
+           <div class="panel-footer">
+           
+           <select class="form-control" style="height: 30px;margin-top: 10px;">
+              <option>执法巡查</option>
+              <option>群众举报</option>
+              <option>上级交办</option>
+              <option>有关部门转办</option>
+              <option>其他</option>
+           </select>
+           </div>
+          </div>
+      </div>
+    </div>  
+    
+     <!-- 该处的bootstrap属性错误！！！ -->
+   <div class="col-lg-7">
+       <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p class="bg-primary">来源</p>
+           <div class="panel-footer">
+           
+           <select class="form-control" style="height: 30px;margin-top: 10px;">
+              <option>执法巡查</option>
+              <option>群众举报</option>
+              <option>上级交办</option>
+              <option>有关部门转办</option>
+              <option>其他</option>
+           </select>
+           </div>
+       </div>
+       </div>
+       <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p class="bg-primary">基本案情</p>
+          <textarea class="form-control" rows="26"></textarea>
+          </div>
+       </div> 
+     </div>
+  </div>
+</div>
+
+<div class="qqserver">
+
+	<div class="qqserver_fold">
+		<div></div>
+	</div>
+	
+	<div class="qqserver-body" style="display: block;">
+		<div class="qqserver-header">
+			<div></div>
+			<span class="qqserver_arrow"></span>
+            <div class="title">案件处理审批表</div>
+		</div>
+		<ul>   
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi">送达回证</div> <div class="anniu"><a href="#">查看</a></div></li>
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi">案件调查终结报告</div><div class="anniu"><a href="#">查看</a></div></li>
+            <li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi2">调查终结报告笔录纸</div><div class="anniu2"><input type="file" class="file" />上传</div></li>
+		</ul>
+	</div>
+	
+</div>
+   
+<input class="btn btn-default" type="submit" value="提交">
+ 
+</body>
+</html>

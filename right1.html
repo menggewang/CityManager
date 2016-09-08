@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>行政处罚审批表</title>
+
+    <!-- Bootstrap -->
+    <link href="css/right1.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="css/alert-handle.css" rel="stylesheet" type="text/css" />
+<link href="css/alert-handle2.css" rel="stylesheet" type="text/css" />
+<!--<link href="../css/Bootstrap.css" rel="stylesheet" type="text/css" />-->
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<!--<script type="text/javascript" src="../js/bootstrap.js"></script>-->
+<script type="text/javascript">
+
+$(function(){
+	var $qqServer = $('.qqserver');
+	var $qqserverFold = $('.qqserver_fold');
+	var $qqserverUnfold = $('.qqserver_arrow');
+	$qqserverFold.mouseover(function(){
+		$qqserverFold.hide();
+		$qqServer.addClass('unfold');
+	});
+	$qqserverUnfold.click(function(){
+		$qqServer.removeClass('unfold');
+		$qqserverFold.show();
+	});
+	//窗体宽度小鱼1024像素时不显示客服QQ
+	function resizeQQserver(){
+		$qqServer[document.documentElement.clientWidth < 1024 ? 'hide':'show']();
+	}
+	$(window).bind("load resize",function(){
+		resizeQQserver();
+	});
+});
+
+
+
+
+</script>
+
+
+
+  </head>
+  <body> 
+  
+  
+  <div class="qqserver">
+
+	<div class="qqserver_fold">
+		<div></div>
+	</div>
+	
+	<div class="qqserver-body" style="display: block;">
+		<div class="qqserver-header">
+			<div></div>
+			<span class="qqserver_arrow"></span>
+            <div class="title">立案审批表录入页面</div>
+		</div>
+		<ul>   
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi"><!--<a href="#">-->当事人身份证</div> <div class="anniu"><a href="#">查看</a></div></li>
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi"><!--<a href="#">-->执法证</div><div class="anniu"><a href="#">查看</a></div></li>
+            <li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi2"><!--<a href="#">-->责令整改通知书</div><div class="anniu2"><input type="file" class="file" />上传</div></li>
+            <li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi"><!--<a href="#">-->现场勘验笔录</div> <div class="anniu"><a href="#">查看</a></div></li>
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi"><!--<a href="#">-->现场照片</div><div class="anniu"><a href="#">查看</a></div></li>
+            <li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi2"><!--<a href="#">-->调查询问笔录</div><div class="anniu2"><input type="file" class="file" />上传</div></li>
+            <li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi"><!--<a href="#">-->笔录纸</div> <div class="anniu"><a href="#">查看</a></div></li>
+            <!--<div class="ehdel_upload_show">
+                <form method="post" action="" enctype="multipart/form-data">
+                <div class="ehdel_upload_show">
+                <input id="ehdel_upload_btn" type="image" value="上传" />
+                </div>
+                <div class="clear"></div>
+                <input type="file" onchange="ehdel_upload_text.value=this.value" class="ehdel_upload" />
+                </form>
+            </div>-->
+		</ul>
+        <!--		<div class="qqserver-footer">
+			<span class="qqserver_icon-alert"></span>
+			<a class="text-primary" href="http://www.17sucai.com/" target="_blank">大家都在说</a>
+		</div>-->
+	</div>
+	
+</div>
+
+
+  <div class="bg-pri">
+   
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="right1.html">行政处罚审批表</a></li>
+             <li><a href="right2.html">行政处罚结案报告</a></li>
+             <li><a href="right3.html">立案审批表</a></li>
+             <li><a href="right4.html">行政处罚告知书</a></li>
+             <li><a href="right5.html">行政处罚决定书</a></li>    
+         </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+	
+    <div class="container bg-white">
+    <br/>
+    <form>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-1 col-lg-8">
+           <p class="bg-primary text-left">当事人</p>
+           <input type="text" class="form-control" value="">
+        </div>	
+        
+         <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 col-lg-8">
+           <p class="bg-primary text-left">基本案情</p>
+           <textarea class="form-control" rows="5"></textarea>
+        </div>
+        	
+        <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 col-lg-8">
+           <p class="bg-primary text-left">违法行为等次</p>
+           <textarea class="form-control" rows="3"></textarea>
+        </div>	
+        
+         <div class="col-md-8 col-md-offset-2  col-xs-10 col-xs-offset-1">
+           <p class="bg-primary text-left">法律依据</p>
+           <textarea class="form-control" rows="3"></textarea>
+        </div>	
+        
+         <div class="col-md-1 col-md-offset-9  col-xs-10 col-xs-offset-10">
+         <br>
+        	<button type="submit" class="btn btn-primary">提交</button>
+       
+         </div>	
+    </div>
+    </form>
+    </div>
+    <br>
+    <br>
+ </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  </body>
+</html>

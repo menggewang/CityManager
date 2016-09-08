@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>绿色清新jQuery在线QQ客服</title>
+
+<link href="css/alert-handle.css" rel="stylesheet" type="text/css" />
+<link href="css/alert-handle2.css" rel="stylesheet" type="text/css" />
+<!--<link href="../css/Bootstrap.css" rel="stylesheet" type="text/css" />-->
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<!--<script type="text/javascript" src="../js/bootstrap.js"></script>-->
+<script type="text/javascript">
+
+$(function(){
+	var $qqServer = $('.qqserver');
+	var $qqserverFold = $('.qqserver_fold');
+	var $qqserverUnfold = $('.qqserver_arrow');
+	$qqserverFold.mouseover(function(){
+		$qqserverFold.hide();
+		$qqServer.addClass('unfold');
+	});
+	$qqserverUnfold.click(function(){
+		$qqServer.removeClass('unfold');
+		$qqserverFold.show();
+	});
+	//窗体宽度小鱼1024像素时不显示客服QQ
+	function resizeQQserver(){
+		$qqServer[document.documentElement.clientWidth < 1024 ? 'hide':'show']();
+	}
+	$(window).bind("load resize",function(){
+		resizeQQserver();
+	});
+});
+
+
+
+
+</script>
+
+</head>
+<body>
+
+<div class="qqserver">
+
+	<div class="qqserver_fold">
+		<div></div>
+	</div>
+	
+	<div class="qqserver-body" style="display: block;">
+		<div class="qqserver-header">
+			<div></div>
+			<span class="qqserver_arrow"></span>
+            <div class="title">结案报告审批表</div>
+		</div>
+		<ul>   
+			<li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi"><!--<a href="#">-->送达回证</div> <div class="anniu"><a href="#">查看</a></div></li>
+            <li><img src="images/alert/20150729042710343_easyicon_net_32.png"/><div class="wenzi2"><!--<a href="#">-->罚款票据专用</div><div class="anniu2"><input type="file" class="file" />上传</div></li>
+            <!--<div class="ehdel_upload_show">
+                <form method="post" action="" enctype="multipart/form-data">
+                <div class="ehdel_upload_show">
+                <input id="ehdel_upload_btn" type="image" value="上传" />
+                </div>
+                <div class="clear"></div>
+                <input type="file" onchange="ehdel_upload_text.value=this.value" class="ehdel_upload" />
+                </form>
+            </div>-->
+		</ul>
+        <!--		<div class="qqserver-footer">
+			<span class="qqserver_icon-alert"></span>
+			<a class="text-primary" href="http://www.17sucai.com/" target="_blank">大家都在说</a>
+		</div>-->
+	</div>
+	
+</div>
+
+</body>
+</html>
+
+

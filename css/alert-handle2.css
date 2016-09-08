@@ -1,0 +1,49 @@
+/* CSS Document */
+.title{
+/*	border:2px solid #0F0;*/
+	margin-top:-17px;
+	font-size:16px;
+	}
+.wenzi{
+	width:125px;
+	margin-top:-27px;
+	margin-left:30px;
+	line-height:20px;
+	color:#333;
+/*	border:1px solid #F00;*/
+}
+.wenzi2{ 
+	margin-top:-27px;
+	margin-left:30px;
+	line-height:20px;
+	width:125px;
+	color:#CCC;
+/*	border:1px solid #F00;*/
+}
+.lianjie{
+	font-size:10px;
+	}
+
+.anniu a{
+/*	position:absolute;
+	padding-left:264px;*/
+	font-size:12px;
+	color:#69C;
+	}
+.anniu2{	
+	font-size:12px;
+	color:red;
+	overflow: hidden;
+  margin-left:157px;
+	margin-top:-18px;
+	width:31px;
+
+	}
+.wenzi2 a{
+	color:#999;
+	}
+.clear{clear:both;}
+.ehdel_upload_show input{float:left;color: #F00;margin-top:-25px;margin-left: 118px;}
+.ehdel_upload{float:left;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+
+.file{ position:absolute; z-index:100;font-size:60px;opacity:0;filter:alpha(opacity=0); margin-top:-5px;}

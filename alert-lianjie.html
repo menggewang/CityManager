@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"  content="width=device-width,initial-scale=1">
+
+<title>郑州市惠济区城市管理</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/alert-handle.css" rel="stylesheet" type="text/css" />
+<link href="css/alert-handle2.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>s
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<!--<script type="text/javascript" src="../js/bootstrap.js"></script>-->
+<script type="text/javascript">
+
+$(function(){
+	var $qqServer = $('.qqserver');
+	var $qqserverFold = $('.qqserver_fold');
+	var $qqserverUnfold = $('.qqserver_arrow');
+	$qqserverFold.click(function(){
+		$qqserverFold.hide();
+		$qqServer.addClass('unfold');
+	});
+	$qqserverUnfold.click(function(){
+		$qqServer.removeClass('unfold');
+		$qqserverFold.show();
+	});
+	//窗体宽度小鱼1024像素时不显示客服QQ
+	function resizeQQserver(){
+		$qqServer[document.documentElement.clientWidth < 1024 ? 'hide':'show']();
+	}
+	$(window).bind("load resize",function(){
+		resizeQQserver();
+	});
+});
+
+
+
+
+</script>
+</head>
+
+
+<frameset cols="95%,*" frameborder="no" border="0" framespacing="0" >
+   
+           <frame src="right3.html" frameborder="no" scrolling="No"  noresize="noresize" />
+           <frame src="alert-handle.html" frameborder="no" scrolling="No"  noresize="noresize"/>
+
+</frameset>
+
+<noframes>
+</noframes>
+
+
+
+
+<body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
